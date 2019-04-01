@@ -6,8 +6,8 @@ RCSwitch mySwitch = RCSwitch();
 // the setup function runs once when you press reset or power the board
 void setup() {
 
-  mySwitch.enableTransmit(17);  // Receiver on interrupt 0 => that is pin #2
-
+  mySwitch.enableTransmit(11); // Connected to pin 11 MOSI
+  
   // start serial port at 9600 bps and wait for port to open:
   Serial.begin(57600);
   while (!Serial) {
